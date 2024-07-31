@@ -1,3 +1,4 @@
+@import url(bootstrap/dist/css/bootstrap.min.css);
 .App {
   text-align: center;
 }
@@ -35,4 +36,95 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: #fff;
+  opacity: 1;
+}
+
+.carousel-indicators .active {
+  background-color: #0b69ff;
+}
+
+.banner-cover-left {
+  background-position: left !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 600px;
+}
+.banner-cover-right {
+  background-position: right !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 600px;
+}
+
+.ml-4px {
+  margin-left: 4px;
+}
+
+.slider-title {
+  color: #171f46;
+  font-size: 44px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.details {
+  list-style-type: none;
+  padding: 16px;
+  margin: 0 0 24px 0;
+}
+
+.details li {
+  color: #171f46;
+  font-size: 16px;
+  font-weight: 400;
+  /* margin-bottom: 8px; */
+}
+
+.price {
+  color: #171f46;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.installments {
+  color: #171f46;
+  font-size: 16px;
+  font-weight: 500;
+  border-top: 1px solid #7e858e;
+  margin-bottom: 0;
+}
+
+.total-price {
+  color: #171f46;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+.PARCELAMENTO {
+  color: #1030d0;
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+.cta-button {
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 4px;
+  background: #0b69ff;
+  border: 0;
+  padding: 8px 16px;
+  width: 233px;
 }

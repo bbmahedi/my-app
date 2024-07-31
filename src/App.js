@@ -1,15 +1,21 @@
 import "./App.css";
-import DragAndDrop from "./DragAndDrop";
+import Slider from "./Slider";
+// import QRCodeGenerator from "./QRCodeGenerator";
+// import DragAndDrop from "./DragAndDrop";
+// import ImageUploader from "./ImageUploader";
 // import Form from "./Form";
 // import FormBulder from "./FormBulder";
 
 function App() {
   return (
     <>
-      <h1>Hello </h1>
-      <DragAndDrop />
+      {/* <h1>Hello </h1> */}
+      <Slider />
+      {/* <ImageUploader /> */}
+      {/* <DragAndDrop /> */}
       {/* <Form /> */}
       {/* <FormBulder /> */}
+      {/* <QRCodeGenerator /> */}
     </>
   );
 }
