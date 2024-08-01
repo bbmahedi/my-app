@@ -1,4 +1,5 @@
 import "./App.css";
+import ScrollX from "./ScrollX";
 import Slider from "./Slider";
 // import QRCodeGenerator from "./QRCodeGenerator";
 // import DragAndDrop from "./DragAndDrop";
@@ -11,6 +12,7 @@ function App() {
     <>
       {/* <h1>Hello </h1> */}
       <Slider />
+      <ScrollX />
       {/* <ImageUploader /> */}
       {/* <DragAndDrop /> */}
       {/* <Form /> */}
