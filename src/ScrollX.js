@@ -48,21 +48,21 @@ const ScrollX = () => {
         modal.style.display = "none";
         modal2.style.display = "none";
         modal3.style.display = "none";
-        pauseVideo();
+        pauseVideo("videoFrame1");
       }
       if (event.target == modal2) {
         modal2.style.display = "none";
-        pauseVideo();
+        pauseVideo("videoFrame2");
       }
       if (event.target == modal3) {
         modal3.style.display = "none";
-        pauseVideo();
+        pauseVideo("videoFrame3");
       }
     };
 
     // Function to pause the video
-    function pauseVideo() {
-      var iframe = document.getElementById("videoFrame");
+    function pauseVideo(videoFrame) {
+      var iframe = document.getElementById(videoFrame);
       var iframeSrc = iframe.src;
       iframe.src = ""; // Clear the src attribute
       iframe.src = iframeSrc; // Reset the src attribute to stop the video
@@ -135,7 +135,7 @@ const ScrollX = () => {
                         <div class="modal-content">
                           <div class="modal-body">
                             <iframe
-                              id="videoFrame"
+                              id="videoFrame1"
                               src="https://drive.google.com/file/d/1zxxbrHwRwfMZPCSMSdmkqpp0y5KBL1CV/preview"
                               width="100%"
                               height="480"
@@ -193,7 +193,7 @@ const ScrollX = () => {
                         <div class="modal-content">
                           <div class="modal-body">
                             <iframe
-                              id="videoFrame"
+                              id="videoFrame2"
                               src="https://drive.google.com/file/d/18V2oQ8vLDcK4qtGgfdqAP2PJsTY9dfkX//preview"
                               width="100%"
                               height="480"
@@ -252,7 +252,7 @@ const ScrollX = () => {
                         <div class="modal-content">
                           <div class="modal-body">
                             <iframe
-                              id="videoFrame"
+                              id="videoFrame3"
                               src="https://drive.google.com/file/d/1EbWJF4iesjlCB6b7MNUKrRQZx3cdMkIl/preview"
                               width="100%"
                               height="480"
