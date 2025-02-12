@@ -15,3 +15,11 @@ code {
 .pointer {
   cursor: pointer;
 }
+
+.hsfc-Step__Banner {
+  display: none !important;
+}
+
+div#de3f76c6-af1b-4022-9615-c1eed842cd92-32 {
+  display: none !important;
+}

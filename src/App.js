@@ -1,6 +1,7 @@
 import "./App.css";
-import ScrollX from "./ScrollX";
-import Slider from "./Slider";
+import HubsportForm from "./HubsportForm";
+// import ScrollX from "./ScrollX";
+// import Slider from "./Slider";
 // import QRCodeGenerator from "./QRCodeGenerator";
 // import DragAndDrop from "./DragAndDrop";
 // import ImageUploader from "./ImageUploader";
@@ -10,9 +11,10 @@ import Slider from "./Slider";
 function App() {
   return (
     <>
+      <HubsportForm />
       {/* <h1>Hello </h1> */}
-      <Slider />
-      <ScrollX />
+      {/* <Slider /> */}
+      {/* <ScrollX /> */}
       {/* <ImageUploader /> */}
       {/* <DragAndDrop /> */}
       {/* <Form /> */}
