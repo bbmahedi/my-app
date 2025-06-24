@@ -18,7 +18,7 @@ export default function HubsportForm() {
       {console.log(data.loaded)}
       {console.log("Error", data.error)}
       {console.log("formCreated", data.formCreated)}
-      <h1>Embed Form Below</h1>
+      <h1>HubsportForm Below</h1>
       <div id="my-hubspot-form"></div>
       <button onClick={() => setModalForStatus(true)}>Hello</button>
       <Modal
