@@ -34,9 +34,3 @@ jobs:
           local-dir: ./build
           server-dir: ${{ secrets.FTP_REMOTE_PATH }}
           protocol: ftp
-          exclude: |
-            **/.git*
-            **/.git*/**
-            **/node_modules/**
-            **/.env*
-          dangerous-clean-slate: false
