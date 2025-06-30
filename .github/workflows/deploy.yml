@@ -1,0 +1,35 @@
+name: Build and Deploy to cPanel via FTP
+
+on:
+  push:
+    branches: [master] # Change if you want a different branch to trigger deployment
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4 # Updated to latest version
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4 # Updated to latest version
+        with:
+          node-version: "21" # Changed to more stable LTS version
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build project
+        run: npm run build
+
+      # - name: Deploy to cPanel via FTP
+      #   uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      #   with:
+      #     server: ${{ secrets.FTP_HOST }}
+      #     username: ${{ secrets.FTP_USERNAME }}
+      #     password: ${{ secrets.FTP_PASSWORD }}
+      #     port: ${{ secrets.FTP_PORT || '21' }}
+      #     local-dir: ./build
+      #     server-dir: ${{ secrets.FTP_REMOTE_PATH }}
+      #     protocol: ftp
