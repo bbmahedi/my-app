@@ -29,6 +29,7 @@ export default function HubsportForm() {
       >
         <Modal.Body>
           <iframe
+            title="Hubspot Form"
             src="https://share-eu1.hsforms.com/2dtZR9mtWTJuYCViMTAdwTA2ek8zy"
             width="100%"
             height="800px"
