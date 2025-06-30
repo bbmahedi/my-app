@@ -1,5 +1,5 @@
 import "./App.css";
-import HubsportForm from "./HubsportForm";
+// import HubsportForm from "./HubsportForm";
 // import ScrollX from "./ScrollX";
 // import Slider from "./Slider";
 // import QRCodeGenerator from "./QRCodeGenerator";
@@ -11,8 +11,8 @@ import HubsportForm from "./HubsportForm";
 function App() {
   return (
     <>
-      <HubsportForm />
-      {/* <h1>Hello </h1> */}
+      {/* <HubsportForm /> */}
+      <h1>Hello </h1>
       {/* <Slider /> */}
       {/* <ScrollX /> */}
       {/* <ImageUploader /> */}
